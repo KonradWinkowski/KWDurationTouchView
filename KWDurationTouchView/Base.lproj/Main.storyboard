@@ -20,7 +20,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N68-Mz-h1k" customClass="KWDurationTouchView" customModule="KWDurationTouchView" customModuleProvider="target">
                                 <rect key="frame" x="275" y="275" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.92941176891326904" green="0.94509804248809814" blue="0.94901961088180542" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="N1y-Ew-mIO"/>
                                     <constraint firstAttribute="width" secondItem="N68-Mz-h1k" secondAttribute="height" multiplier="1:1" id="p5d-Br-Wj9"/>
@@ -37,19 +37,85 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGT-Gq-2xl">
-                                <rect key="frame" x="279" y="186" width="42" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-tZ-bhu" customClass="KWDurationTouchView" customModule="KWDurationTouchView" customModuleProvider="target">
+                                <rect key="frame" x="333" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AUc-Y6-d1x"/>
+                                    <constraint firstAttribute="width" secondItem="XK4-tZ-bhu" secondAttribute="height" multiplier="1:1" id="WvT-jU-p8z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="touchDuration">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.18431372940540314" green="0.80000001192092896" blue="0.43921568989753723" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-6W-ATX" customClass="KWDurationTouchView" customModule="KWDurationTouchView" customModuleProvider="target">
+                                <rect key="frame" x="217" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pYD-6W-ATX" secondAttribute="height" multiplier="1:1" id="Gkt-Sb-4UF"/>
+                                    <constraint firstAttribute="width" constant="50" id="NnC-oZ-8EF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="touchDuration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.20784313979999999" green="0.60000002379999995" blue="0.85882353779999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGT-Gq-2xl">
+                                <rect key="frame" x="300" y="207" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="0.55686277151107788" green="0.26666668057441711" blue="0.67843139171600342" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0S-89-veK" customClass="KWDurationTouchView" customModule="KWDurationTouchView" customModuleProvider="target">
+                                <rect key="frame" x="200" y="63" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y0S-89-veK" secondAttribute="height" multiplier="1:1" id="2J0-C4-QXZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="uG3-ye-9eh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="touchDuration">
+                                        <real key="value" value="0.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.050980392843484879" green="0.26666668057441711" blue="0.37254902720451355" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XK4-tZ-bhu" firstAttribute="width" secondItem="XK4-tZ-bhu" secondAttribute="height" multiplier="1:1" id="285-Cg-xJ9"/>
+                            <constraint firstItem="XK4-tZ-bhu" firstAttribute="centerY" secondItem="N68-Mz-h1k" secondAttribute="centerY" id="2um-o2-mkz"/>
+                            <constraint firstItem="pYD-6W-ATX" firstAttribute="centerY" secondItem="N68-Mz-h1k" secondAttribute="centerY" id="7YG-gD-wcp"/>
                             <constraint firstItem="N68-Mz-h1k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D6z-wt-vW5"/>
+                            <constraint firstItem="Y0S-89-veK" firstAttribute="width" secondItem="Y0S-89-veK" secondAttribute="height" multiplier="1:1" id="HSg-uz-Hn3"/>
+                            <constraint firstItem="N68-Mz-h1k" firstAttribute="top" secondItem="Y0S-89-veK" secondAttribute="bottom" constant="12" id="Oir-3b-kaw"/>
+                            <constraint firstItem="Y0S-89-veK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RtN-z9-qX5"/>
                             <constraint firstItem="N68-Mz-h1k" firstAttribute="top" secondItem="CGT-Gq-2xl" secondAttribute="bottom" constant="68" id="UFS-O2-iUV"/>
+                            <constraint firstItem="N68-Mz-h1k" firstAttribute="leading" secondItem="pYD-6W-ATX" secondAttribute="trailing" constant="8" id="bXG-jz-9u4"/>
+                            <constraint firstItem="XK4-tZ-bhu" firstAttribute="leading" secondItem="N68-Mz-h1k" secondAttribute="trailing" constant="8" id="kid-BN-Ryw"/>
                             <constraint firstItem="CGT-Gq-2xl" firstAttribute="centerX" secondItem="N68-Mz-h1k" secondAttribute="centerX" id="oH0-Bu-uYq"/>
                             <constraint firstItem="N68-Mz-h1k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6g-tX-aT1"/>
+                            <constraint firstItem="pYD-6W-ATX" firstAttribute="width" secondItem="pYD-6W-ATX" secondAttribute="height" multiplier="1:1" id="qnN-wt-Ugy"/>
                         </constraints>
                     </view>
                     <connections>
