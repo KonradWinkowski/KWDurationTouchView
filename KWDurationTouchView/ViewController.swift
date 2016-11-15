@@ -10,28 +10,32 @@ import UIKit
 
 class ViewController: UIViewController, KWDurationTouchViewDelegate {
     
+    @IBOutlet var durationViews: [KWDurationTouchView]!
+    
+    
     @IBOutlet weak var progressLabel: UILabel!
-    @IBOutlet weak var durationTouchView: KWDurationTouchView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.durationTouchView.delegate = self;
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        for view in durationViews {
+            view.delegate = self;
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func didCompleteTouch(sender: KWDurationTouchView) {
+    func didCompleteTouch(_ sender: KWDurationTouchView) {
         self.progressLabel.text = "Complete!"
     }
     
-    func didCancelTouch(sender: KWDurationTouchView, atPercentage: CGFloat) {
+    func didCancelTouch(_ sender: KWDurationTouchView, atPercentage: CGFloat) {
         self.progressLabel.text = "Canceled!"
     }
     
-    func percentageOfProgress(sender: KWDurationTouchView, progress: CGFloat) {
+    func percentageOfProgress(_ sender: KWDurationTouchView, progress: CGFloat) {
         
         self.progressLabel.text = String(format: "%.2f",progress * 100) + " %"
     }
